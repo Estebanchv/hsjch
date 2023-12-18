@@ -1,0 +1,20 @@
+@media (max-width: 575.98px) {
+    #void ,.super_slide{
+      display: none!important;
+    }
+  }
+  
+  /* Para pantallas medianas, el color de fondo es azul */
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    #void,.super_slide {
+        display: none!important;
+      }
+  }
+  
+  /* Para pantallas grandes, el color de fondo es rojo */
+  @media (min-width: 768px) {
+    #acordeon,.super_slide2{
+        display: none;
+    }
+    
+  }

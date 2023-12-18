@@ -412,10 +412,12 @@ body .super_slider .options .option .label .info .sub {
 }
 .texto-slider{
   transition: transform 0.3s;
+  
 
 }
 
 .super_slider .options .option.active .texto-slider{
-  color: aquamarine!important;
+  FONT-SIZE: 2rem!important;
+  COLOR: WHITE;
   transform: translateY(-20px);
 }

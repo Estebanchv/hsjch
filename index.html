@@ -29,6 +29,7 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style-slide.css">
+  <link rel="stylesheet" href="assets/css/tablet_celulares.css">
   <!-- =======================================================
   * Template Name: Medicio
   * Updated: Sep 18 2023 with Bootstrap v5.3.2
@@ -62,9 +63,8 @@
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="nav-link scrollto " href="#hero">Home</a></li><!--
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto " href="#hero">Home</a></li>
+       <!--   <li><a class="nav-link scrollto" href="#services">Services</a></li>
           <li><a class="nav-link scrollto" href="#departments">Departments</a></li>
           <li><a class="nav-link scrollto" href="#doctors">Doctors</a></li>
           <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
@@ -104,6 +104,7 @@
 
 
     <style>
+     
 :root {
     --rotate-speed: 40;
     --count: 8; /* Default count, the DOM element should override this */
@@ -293,9 +294,9 @@
     box-shadow: 0px 18px 36px -18px rgba(12, 5, 46, 0.3), 0px 30px 60px -12px rgba(12, 5, 46, 0.25);
     border-radius: 50%;
 }
-/* .crop {
+ .crop {
     -webkit-mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 1));
-}*/
+}
  .mask {
     position: absolute;
     top: 0;
@@ -317,71 +318,178 @@
     background-image: linear-gradient(180deg, rgba(60, 26, 229, 0) 0%, #1ad4e5 50%, rgba(51, 117, 168, 0) 100%);
 }     
 .holi {
-    width: 30%;
-    height: 30%;
+  width: 50%;
+    height: 100%;
     /* background: blue; */
-    top: 45%;
-    left: 16%;
-    transition: transform 0.3s;
+    /* top: 45%; */
+    /* left: 16%; */
     position: absolute;
     z-index: 2;
-   opacity: 0;
+    opacity: 0;
   
 }
-.holi2{
-  opacity:1;
+
+.holi1{
+  background-color: lawngreen;
 }
-*/
-/*
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}*/
+.holi2{
+  background-color: rgb(198, 246, 3);
+}
+.holi3{
+  background-color: rgb(237, 171, 3);
+}
+.holi4{
+  background-color: rgb(252, 113, 0);
+}
+.holi5{
+  background-color: rgb(237, 59, 5);
+}
+.holi6{
+  background-color: rgb(0, 246, 107);
+}
+.holi7{
+  background-color: rgb(40, 104, 75);
+}
+.holi8{
+  background-color: #0560d7;
+}
+
     </style>
 
     <!-- ======= Featured Services Section ======= -->
 
     <section id="carrouselflotante">
-
+      <div class="section-title">
+        <h2>Resumen Ejecutivo</h2>
+        <p>Principales Indicadores de Salud</p>
+      </div>
       <div class="void" id="void">
+      
+      <div id="slide_circular">
+        <div class="indicador-solitario holi holi1" id="holi1" ><h1 class="">Aca ira indicadores 1</h1>
+          <a href="https://www.google.com/" target="_blank"><span class="model-name">Indicador prueba</span></a>
        
-        <div class="crop"  id="carrouselflotante-card">
-          <div class="indicador-solitario holi holi1"><h1 class="">hola aca toy</h1>
-          <p><a href="">1.-hola</a><br><a href="">2.chau</a></p></div>
-          <div class="indicador-solitario holi"><h1 class="">hola aca toy</h1></div>
-          <div class="indicador-solitario holi"><h1 class="">hola aca toy</h1></div>
-          <div class="indicador-solitario holi"><h1 class="">hola aca toy</h1></div>
-          <div class="indicador-solitario holi"><h1 class="">hola aca toy</h1></div>
-          <div class="indicador-solitario holi"><h1 class="">hola aca toy</h1></div>
-          <div class="indicador-solitario holi"><h1 class="">hola aca toy</h1></div>
-          <div class="indicador-solitario holi"><h1 class="">hola aca toy</h1></div>
+        </div>
+          <div class="indicador-solitario holi holi2"><h1 class="">Aca ira indicadores 2</h1><a href="https://www.youtube.com/" target="_blank"><span class="model-name">Indicador</span></a></div>
+          <div class="indicador-solitario holi holi3"><h1 class="">Aca ira indicadores 3</h1></div>
+          <div class="indicador-solitario holi holi4" ><h1 class="">Aca ira indicadores 4</h1></div>
+          <div class="indicador-solitario holi holi5" ><h1 class="">Aca ira indicadores 5</h1></div>
+          <div class="indicador-solitario holi holi6" ><h1 class="">Aca ira indicadores 6</h1></div>
+          <div class="indicador-solitario holi holi7" ><h1 class="">Aca ira indicadores 7</h1></div>
+          <div class="indicador-solitario holi holi8" ><h1 class="">Aca ira indicadores 8</h1> <a href="https://www.google.com/" target="_blank"></a></div>
+        <div class="crop" id="carrouselflotante-card">
+          
         <ul id="card-list" style="--count: 8;">
-            <li><div class="card indicador proba"><a href=""><span class="model-name">Indicador</span><span>Indicadores de Desempeño y Compromiso de Mejora</span></a></div></li>
-            <li><div class="card indicador card1"><a href=""><span class="model-name">Indicador</span><span>Indicadores de Compromiso y Gestion FED</span></a></div></li>
-            <li><div class="card indicador card2"><a href=""><span class="model-name">Indicador</span><span>Sanitario Priorizado</span></a></div></li>
-            <li><div class="card indicador"><a href=""><span class="model-name">Indicador</span><span>Recuros Humanos segun PLH</span></a></div></li>
-            <li><div class="card indicador"><a href=""><span class="model-name">Indicador</span><span>Indicadores de Ejecucion Presupuestal</span></a></div></li>
-            <li><div class="card indicador"><a href=""><span class="model-name">Indicador</span><span>Gestantes</span></a></div></li>
-            <li><div class="card indicador"><a href=""><span class="model-name">Indicador</span><span>Indicadores de Ejecucion Presupuestal</span></a></div></li>
-            <li><div class="card indicador"><a href=""><span class="model-name">Indicador</span><span>Gestantes</span></a></div></li>
+            <li><div class="card indicador card1"><span class="model-name">Indicador</span><span>Indicadores de Desempeño y Compromiso de Mejora</span></div></li>
+            <li><div class="card indicador card2"><span class="model-name">Indicador</span><span>Indicadores de Compromiso y Gestion FED</span></div></li>
+            <li><div class="card indicador card3"><span class="model-name">Indicador</span><span>Sanitario Priorizado</span></div></li>
+            <li><div class="card indicador card4"><span class="model-name">Indicador</span><span>Recuros Humanos segun PLH</span></div></li>
+            <li><div class="card indicador card5"><span class="model-name">Indicador</span><span>Indicadores de Ejecucion Presupuestal</span></div></li>
+            <li><div class="card indicador card6"><span class="model-name">Indicador</span><span>Gestantes</span></div></li>
+            <li><div class="card indicador card7"><span class="model-name">Indicador</span><span>Indicadores de Ejecucion Presupuestal</span></div></li>
+            <li><div class="card indicador card8"><span class="model-name">Indicador</span><span>Gestantes</span></div></li>
             <!-- añadir un maximo de 15 cards -->
         </ul>
         <div class="last-circle"></div>
         <div class="second-circle"></div>
         </div>
         <div class="mask">
-         <!-- <div class="indicador-solitario"><a href="" style="  animation-play-state: paused;"><span class="model-name">Indicador</span><span>Indicadores de Desempeño y Compromiso de Mejora</span></a></div>
-          
-        </div>-->
+        
+        </div>
         <div class="center-circle"></div>
-    <div>    
+      </div></div>      
+    
+<!-- version movil-->
+      <div class="accordion accordion-flush" id="acordeon">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Indicadores 1
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample" style="">
+            <div class="accordion-body">1 punto sub indicador</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              indicadores 2
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample" style="">
+            <div class="accordion-body">1 punto sub indicador </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              indicadores 3
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample" style="">
+            <div class="accordion-body">1 punto sub indicador</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapseFour">
+              indicadores 4
+            </button>
+          </h2>
+          <div id="flush-collapsefour" class="accordion-collapse collapse" aria-labelledby="flush-headingfour" data-bs-parent="#accordionFlushExample" style="">
+            <div class="accordion-body">1 punto sub indicador</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingfive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefive" aria-expanded="false" aria-controls="flush-collapsefive">
+              indicadores 5
+            </button>
+          </h2>
+          <div id="flush-collapsefive" class="accordion-collapse collapse" aria-labelledby="flush-headingfive" data-bs-parent="#accordionFlushExample" style="">
+            <div class="accordion-body">1 punto sub indicador</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingSix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+              indicadores 6
+            </button>
+          </h2>
+          <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">1 punto sub indicador</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingSeven">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+              indicadores 7
+            </button>
+          </h2>
+          <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">1 punto sub indicador</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingEight">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+              indicadores 8
+            </button>
+          </h2>
+          <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
+            <a href=""><div class="accordion-body">1 punto sub indicador</div></a>
+          </div>
+        </div>
+       <!-- version movil-->
+      </div>
     </section>
     <section id="featured-services" class="featured-services">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
           <h2>Repositorio Regional</h2>
-          <p>Sistema estadistico con información actualizada de reportes operacionales de las estrategias sanitarias, etapas de vida, reportes estadisticos con el objetivo de estandarizar criterios de registros, codificacion y datos abiertos en salud de la Region Junin.</p>
+          <p>Sistema estadistico con información actualizada de reportes operacionales de las estrategias sanitarias, etapas de vida, reportes estadisticos con el objetivo de estandarizar criterios de registros, codificacion y datos abiertos en salud del Hospital de Chincha.</p>
         </div>
         <div class="row">
           <div class="col-md-9 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
@@ -395,7 +503,7 @@
           <div class="col-md-9 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
               <div class="icon"><i class="fas fa-pills"></i></div>
-              <h4 class="title"><a href="">Cloud Diresa Junin</a></h4>
+              <h4 class="title"><a href="">Cloud Hospital Chincha</a></h4>
               <p class="description">Alojamiento de archivos de la Direccion Regional de Salud</p>
             </div>
           </div>
@@ -420,7 +528,7 @@
           <div class="col-md-9 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
               <div class="icon"><i class="fas fa-pills"></i></div>
-              <h4 class="title"><a href="">Cloud Diresa Junin</a></h4>
+              <h4 class="title"><a href="">Cloud Hospital Chincha</a></h4>
               <p class="description">Alojamiento de archivos de la Direccion Regional de Salud</p>
             </div>
           </div>
@@ -536,12 +644,12 @@
 
 
     <section class="super_slider">
-      <div class="container" data-aos="fade-up">
-      <div class="section-title">
+      <div class="container " data-aos="fade-up">
+      <div class="section-title ">
         <h2>Hechos Vitales y Historia CLinica Electronica SIHCE</h2>
         <p>Migracion de SIHCE. MODULOS de WAWARED,CRED e INMUNIZACIONES</p>
       </div>
-      <div class="options" data-aos="fade-up" data-aos-delay="100" style="height: 35vh;">
+      <div class="options super_slide" data-aos="fade-up" data-aos-delay="100" style="height: 35vh;">
          <div class="option opts_l1 active" style="background-image:url(assets/img/slide-principales/enfermera.jpg);">
 
             <div class="shadow"></div>
@@ -550,8 +658,8 @@
                   💉
                </div>
                <div class="info">
-               <!-- <div class="main texto-slider">1.Tablero Migracion de SIHCE A MINSA</div>
-                <div class="main texto-slider">2.ACCESO A SISTEMA</div>-->
+               <div class="main texto-slider">    INMUNIZACIONES</div>
+           <!--     <div class="main texto-slider">2.ACCESO A SISTEMA</div>-->
                </div>
             </div>
          </div>
@@ -563,6 +671,7 @@
                   🧑‍🍼
                </div>
                <div class="info">
+                <div class="main texto-slider">    CRED</div>
                 <!--  <div class="main texto-slider">1.Tablero de migraciones Sihce a Hisminsa</div>
                   <div class="main texto-slider">2.Acceso Al istema.</div>-->
                </div>
@@ -575,6 +684,7 @@
                 ⚰️
                </div>
                <div class="info">
+                <div class="main texto-slider">    SINADEF</div>
                <!--   <div class="main texto-slider">1.Ingreso Al sistema SINADEF</div>
                   <div class="main texto-slider">2.Tablero de defunciones Regional!</div>
                   <div class="main texto-slider">3.Tablero de defunciones Reunis!</div>-->
@@ -588,6 +698,7 @@
                   👶
                </div>
                <div class="info">
+                <div class="main texto-slider">    CNV</div>
               <!--    <div class="main texto-slider">1.Ingreso al sistema CNV en linea</div>
                   <div class="main texto-slider">2.Tablero CNV en linea REGIONAL 2022</div>
                   <div class="main texto-slider">3.Tablero CNV en linea REGIONAL 2018-2021</div>-->
@@ -601,11 +712,11 @@
                   🤰
                </div>
                <div class="info">
-            
+                <div class="main texto-slider">    GESTANTE</div>
                </div>
             </div>
          </div>
-         <div class="option opts_l6" style="background-image:url(assets/img/slide-principales/gestante.png);">
+         <div class="option opts_l6" style="">
           <div class="shadow"></div>
           <div class="label">
              <div class="icon">
@@ -616,7 +727,7 @@
              </div>
           </div>
        </div>
-       <div class="option opts_l7" style="background-image:url(assets/img/slide-principales/gestante.png);">
+       <div class="option opts_l7" style="">
         <div class="shadow"></div>
         <div class="label">
            <div class="icon">
@@ -648,7 +759,7 @@
 
 
 </style>
-      <div class="container services" data-aos="fade-up">
+      <div class="container services super_slide" data-aos="fade-up">
 
         <div class="row no-gutters">
 
@@ -714,6 +825,43 @@
          
         </div>
 
+      </div>
+
+      
+
+      <div class="container services super_slide2" data-aos="fade-up">
+
+       
+        <div class="row">
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon"><i class="fa-solid fa-chart-column"></i></div>
+            <h4 class="title"><a href="">Inmunizacione</a></h4>
+            <p class="description"></p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon"><i class="fa-solid fa-chart-column"></i></div>
+            <h4 class="title"><a href="">CRED</a></h4>
+            <p class="description"></p>
+          </div><!--<i class="fas fa-hospital-user"></i>-->
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon"><i class="fa-solid fa-chart-column"></i></div>
+            <h4 class="title"><a href="">SINADEF</a></h4>
+            <p class="description"></p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon"><i class="fa-solid fa-chart-column"></i></div>
+            <h4 class="title"><a href="">CNV</a></h4>
+            <p class="description"></p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon"><i class="fa-solid fa-chart-column"></i></div>
+            <h4 class="title"><a href="">GESTANTES</a></h4>
+            <p class="description"> </p>
+          </div>
+         
+        </div>
+      </div>
+      
       </div>
     </section>
 
@@ -782,7 +930,7 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>BETO GAAAAAAAAAAAAAAAA</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>Humberto Esteban Chavez Guerrero</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->

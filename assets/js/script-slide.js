@@ -125,7 +125,7 @@ $(".card1").click(function() {
 });*/
 
 
-/*
+
 var div1 = $('.card1');
 var div2 = $('.card2');
 var div3 = $('.holi1');
@@ -134,13 +134,71 @@ var div3 = $('.holi1');
 
 
 $(".card1").click(function(){
-  $('.holi1').css("opacity", 1);
+    $(".holi1").animate({opacity: 1}, 1000);
+    $(".holi1").css("z-index", "2");
+    $(".holi2,.holi3,.holi4,.holi5,.holi6,.holi7,.holi8").css("z-index", "0");
+    $(".holi2,.holi3,.holi4,.holi5,.holi6,.holi7,.holi8").animate({opacity: 0}, 1000);
  
+});
+$(".card2").click(function(){
+  $(".holi2").animate({opacity: 1}, 1000);
+  $(".holi2").css("z-index", "2");
+  $(".holi1,.holi3,.holi4,.holi5,.holi6,.holi7,.holi8").css("z-index", "0");
+  $(".holi1,.holi3,.holi4,.holi5,.holi6,.holi7,.holi8").animate({opacity: 0}, 1000);
+});
+$(".card3").click(function(){
+  $(".holi3").animate({opacity: 1}, 1000);
+  $(".holi3").css("z-index", "2");
+  $(".holi1,.holi2,.holi4,.holi5,.holi6,.holi7,.holi8").css("z-index", "0");
+  $(".holi2,.holi1,.holi4,.holi5,.holi6,.holi7,.holi8").animate({opacity: 0}, 1000);
+});
+$(".card4").click(function(){
+    $(".holi4").animate({opacity: 1}, 1000);
+    $(".holi4").css("z-index", "2");
+    $(".holi1,.holi3,.holi2,.holi5,.holi6,.holi7,.holi8").css("z-index", "0");
+    $(".holi2,.holi3,.holi1,.holi5,.holi6,.holi7,.holi8").animate({opacity: 0}, 1000);
+});
+$(".card5").click(function(){
+  $(".holi5").animate({opacity: 1}, 1000);
+  $(".holi5").css("z-index", "2");
+  $(".holi1,.holi3,.holi4,.holi2,.holi6,.holi7,.holi8").css("z-index", "0");
+  $(".holi2,.holi3,.holi4,.holi1,.holi6,.holi7,.holi8").animate({opacity: 0}, 1000);
+
+});
+$(".card6").click(function(){
+  $(".holi6").animate({opacity: 1}, 1000);
+  $(".holi6").css("z-index", "2");
+  $(".holi1,.holi3,.holi4,.holi5,.holi2,.holi7,.holi8").css("z-index", "0");
+  $(".holi2,.holi3,.holi4,.holi1,.holi6,.holi7,.holi8").animate({opacity: 0}, 1000);
+
+});
+$(".card7").click(function(){
+  $(".holi7").animate({opacity: 1}, 1000);
+  $(".holi7").css("z-index", "2");
+  $(".holi1,.holi3,.holi4,.holi5,.holi6,.holi2,.holi8").css("z-index", "0");
+  $(".holi2,.holi3,.holi4,.holi1,.holi6,.holi1,.holi8").animate({opacity: 0}, 1000);
+});
+$(".card8").click(function(){
+  $(".holi8").animate({opacity: 1}, 1000);
+  $(".holi8").css("z-index", "2");
+  $(".holi1,.holi3,.holi4,.holi5,.holi6,.holi7,.holi8").css("z-index", "0");
+  $(".holi2,.holi3,.holi4,.holi1,.holi6,.holi7,.holi1").animate({opacity: 0}, 1000);
 });
 
 // Añade un listener de eventos al tercer div para cambiar la opacidad del segundo div a 0
 
 
-div2.click(function(){
-  $('.holi1').css("opacity", 0);
-});*/
+function ocultar() {
+  document.getElementsByClassName("holi").style.opacity = "0";
+}
+
+$("#hero").hover(function(){
+  $(".holi").css("opacity", 0);
+  $(".holi1,.holi2,.holi3,.holi4,.holi5,.holi6,.holi2,.holi8").css("z-index", "0");
+});0
+
+$("#carrouselflotante").hover(function(){
+  $(".holi").css("opacity", 0);
+  $(".holi1,.holi2,.holi3,.holi4,.holi5,.holi6,.holi2,.holi8").css("z-index", "0");
+});
+
