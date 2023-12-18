@@ -16,7 +16,7 @@
         bottom: -7vh;
     }
   }
- @media (max-width: 420px)   (max-height: 400px){
+ @media (max-width: 420px) and (max-height: 400px){
       #hero:before {
         bottom: -7vh;
     }
