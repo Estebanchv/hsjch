@@ -2,6 +2,9 @@
     #void ,.super_slide{
       display: none!important;
     }
+    #hero:before {
+        bottom: -7vh;
+    }
   }
   
   /* Para pantallas medianas, el color de fondo es azul */
@@ -9,6 +12,9 @@
     #void,.super_slide {
         display: none!important;
       }
+      #hero:before {
+        bottom: -7vh;
+    }
   }
   
   /* Para pantallas grandes, el color de fondo es rojo */
