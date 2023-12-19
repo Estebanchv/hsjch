@@ -1866,3 +1866,13 @@ section {
   font-size: 13px;
 }
 
+.accordion_cel_primera{
+  border: none;
+}
+.accordion_cel_primera_boton:not(.collapsed) {
+  border-radius: 35px!important;
+  background: #3fbbc0;
+  
+}
+
+
