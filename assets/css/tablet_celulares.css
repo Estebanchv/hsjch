@@ -1,20 +1,39 @@
 @media (max-width: 575.98px) {
-    #void ,.super_slide{
+  #void ,.super_slide{
+    display: none!important;
+  }
+  #hero:before {
+      bottom: -7vh;
+  }
+}
+
+/* Para pantallas medianas, el color de fondo es azul */
+@media (min-width: 576px) and (max-width: 767.98px){
+  #void,.super_slide {
       display: none!important;
     }
+    #hero:before {
+      bottom: -7vh;
   }
-  
-  /* Para pantallas medianas, el color de fondo es azul */
-  @media (min-width: 576px) and (max-width: 767.98px) {
-    #void,.super_slide {
-        display: none!important;
-      }
+  #texto_automatico{
+    padding: 0 60px;
   }
-  
-  /* Para pantallas grandes, el color de fondo es rojo */
-  @media (min-width: 768px) {
-    #acordeon,.super_slide2{
-        display: none;
-    }
-    
+}
+@media (max-width: 420px) and (max-height: 400px){
+    #hero:before {
+      bottom: -7vh;
   }
+}
+
+
+/* Para pantallas grandes, el color de fondo es rojo */
+@media (min-width: 768px) {
+  #acordeon,.super_slide2{
+      display: none;
+  }
+  /**/
+}
+
+.accordion_hechos_sub{
+  width: 100%;
+}
