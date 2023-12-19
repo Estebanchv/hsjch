@@ -1872,7 +1872,7 @@ section {
 .accordion_cel_primera_boton:not(.collapsed) {
   border-radius: 35px!important;
   background: #3fbbc0;
-  
+  color: white;
 }
 
 
