@@ -19,8 +19,8 @@
   /* -------------- BUTTON -------------- */
   .btn_modo{
     background-color: #fff;
-    width: 5em;
-    height: 2.5em;
+    width: 4em;
+    height: 2em;
     border-radius: 10em;
     padding: 0 0.5em;
   
@@ -38,8 +38,8 @@
   
   .btn__indicador_luz{
     background-color: #fff;
-    height: 2em;
-    width: 2em;
+    height: 1.5em;
+    width: 1.5rem;
     border-radius: 50%;
   
     position: absolute;
@@ -50,7 +50,7 @@
   }
   
   .btn__icon-container {
-    width: 94%;
+    width: 92%;
     height: 95%;
     display: flex;
     justify-content: center;
@@ -59,7 +59,7 @@
   
   .btn__icon{
     color: var(--light-icon-color);
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
   
   /* -------------- ANIMATION ------------ */
@@ -87,11 +87,11 @@
                 inset 0 -4px 4px rgba(0,0,0, .3);
   }
   
-  .darkmode .btn__indicador_luz{
-    transform: translateX(2em);
+  .darkmode .btn__indicador_luz {
+    transform: translateX(1.8em);
     background-color: var(--dark-color);
     box-shadow: 0 8px 40px rgba(0,0,0, .3);
-  }
+}
   
   .darkmode .btn__icon{
     color: var(--dark-icon-color);
