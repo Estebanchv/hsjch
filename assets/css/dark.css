@@ -106,7 +106,7 @@
   .darkmode #header{
     background-color: var(--dark-color) ;
   }
-  .darkmode .accordion-button,.darkmode .accordion-item {
+  .darkmode .accordion-button,.darkmode .accordion-item,.darkmode #footer {
     color: var(--light-color);
     background-color: var(--dark-color) ;
 }
