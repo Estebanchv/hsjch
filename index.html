@@ -30,6 +30,7 @@
   <link href="assets/css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style-slide.css">
   <link rel="stylesheet" href="assets/css/tablet_celulares.css">
+  <link rel="stylesheet" href="assets/css/dark.css">
   <!-- =======================================================
   * Template Name: Medicio
   * Updated: Sep 18 2023 with Bootstrap v5.3.2
@@ -62,9 +63,22 @@
       <!-- <h1 class="logo me-auto"><a href="index.html">Medicio</a></h1> -->
 
       <nav id="navbar" class="navbar order-last order-lg-0">
-        <ul>
+   <ul>
           <li><a class="nav-link scrollto " href="#hero">Home</a></li>
-       <!--   <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          
+          <li style="    left: 3em;">
+            <div class="btn_modo">
+                <div class="btn__indicador_luz">
+                    <div class="btn__icon-container">
+                      <i class="btn__icon fa-solid fa-sun"></i>
+                    </div>
+                </div>
+            </div>
+          </li>
+        </ul>
+       <!-- 
+        https://www.youtube.com/watch?v=MNf8DUej1Vo
+        <li><a class="nav-link scrollto" href="#services">Services</a></li>
           <li><a class="nav-link scrollto" href="#departments">Departments</a></li>
           <li><a class="nav-link scrollto" href="#doctors">Doctors</a></li>
           <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
@@ -106,6 +120,7 @@
     <style>
      
 :root {
+ 
     --rotate-speed: 40;
     --count: 8; /* Default count, the DOM element should override this */
     --easeInOutSine: cubic-bezier(0.37, 0, 0.63, 1);
@@ -118,8 +133,8 @@
 }
 
 #carrouselflotante .void {
-    width: 100%;
-    max-width: 1024px;
+    width: 85%;
+   /* max-width: 1024px;*/
     margin: auto;
     position: relative;
     aspect-ratio: 1 / 1;
@@ -404,7 +419,7 @@
         <div class="accordion-item accordion_cel_primera">
           <h2 class="accordion-header" id="flush-headingOne">
             <button class="accordion-button accordion_cel_primera_boton collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-              <h4>Indicadores 1</h4>
+              <i class="fa-solid fa-chart-column"></i> <h4>  Indicadores 1</h4>
             </button>
           </h2>
           <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample" style="">
@@ -414,7 +429,7 @@
         <div class="accordion-item accordion_cel_primera">
           <h2 class="accordion-header" id="flush-headingTwo">
             <button class="accordion-button accordion_cel_primera_boton collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-             <h4>indicadores 2</h4>
+             <h4>indicadores 2  </h4>
             </button>
           </h2>
           <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample" style="">

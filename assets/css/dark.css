@@ -1,0 +1,108 @@
+/* ------------ VARIABLES ------------ */
+:root{
+    /* COLORS */
+    --color: #9176FF;
+    --dark-color: #2b2b2b;
+    --dark-icon-color: #fff;
+    --light-color: #f7f7f7;
+    --light-icon-color: #FFDE59;
+  }
+  
+  /* ------------ BASE ------------ */
+  
+  
+  body{
+
+    background-color: var(--light-color);
+  }
+  
+  /* -------------- BUTTON -------------- */
+  .btn_modo{
+    background-color: #fff;
+    width: 5em;
+    height: 2.5em;
+    border-radius: 10em;
+    padding: 0 0.5em;
+  
+    box-shadow: inset 0 8px 60px rgba(0,0,0, .1),
+                inset 0 8px 8px rgba(0,0,0, .1),
+                inset 0 -4px 4px rgba(0,0,0, .1);
+  
+    position: relative;
+  
+    display: flex;
+    align-items: center;
+  
+    cursor: pointer;
+  }
+  
+  .btn__indicador_luz{
+    background-color: #fff;
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+  
+    position: absolute;
+  
+    box-shadow: 0 8px 40px rgba(0,0,0, .2);
+  
+    transition: transform .3s ease;
+  }
+  
+  .btn__icon-container {
+    width: 94%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+  .btn__icon{
+    color: var(--light-icon-color);
+    font-size: 2rem;
+  }
+  
+  /* -------------- ANIMATION ------------ */
+  .btn__icon.animated{
+    animation: spin 0.5s;
+  }
+  
+  @keyframes spin{
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* -------------- DARKMODE -------------- */
+  body.darkmode{
+    background-color: var(--dark-color);
+    color: var(--light-color);
+  }
+  .darkmode a{
+    color: var(--light-color)!important; 
+  }
+  .darkmode .btn_modo{
+    box-shadow: inset 0 8px 60px rgba(0,0,0, .3),
+                inset 8px 0 8px rgba(0,0,0, .3),
+                inset 0 -4px 4px rgba(0,0,0, .3);
+  }
+  
+  .darkmode .btn__indicador_luz{
+    transform: translateX(2em);
+    background-color: var(--dark-color);
+    box-shadow: 0 8px 40px rgba(0,0,0, .3);
+  }
+  
+  .darkmode .btn__icon{
+    color: var(--dark-icon-color);
+  }
+  
+ .darkmode .featured-services .icon-box  {
+    background-color: var(--dark-color)!important;
+  }
+  .darkmode .navbar a, .navbar a:focus{
+    color: var(--dark-icon-color);
+  }
+  .darkmode #header{
+    background-color: var(--dark-color) ;
+  }
