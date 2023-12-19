@@ -249,7 +249,7 @@ body .super_slider .options {
 }
 @media screen and (max-width: 718px) {
   body .options {
-    min-width: 520px;
+    min-width: 69.3333vw;
   }
   body .options .option:nth-child(5) {
     display: none;
