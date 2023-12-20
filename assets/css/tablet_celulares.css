@@ -62,7 +62,7 @@ i.icon_modi_aco.fa-solid.fa-chart-column {
  
 }
 
-@media (max-width: 951px) and (max-height: 500px){
+@media (max-width: 900px){
   .navbar ul {
       display: flex!important;
   }
@@ -90,16 +90,29 @@ margin-bottom: .5rem;
 #texto_automatico{
   padding: 0 60px!important;
 }
+
 }
 
 /* Para pantallas grandes, el color de fondo es rojo */
-@media (min-height:1000px) and (min-width: 768px) {
+
+@media  (min-width: 952px) {
   #acordeon,.super_slide2{
-      display: none;
+      display: none!important;
   }
- 
+ }
+
+ @media  (min-width: 952px) {
+  #acordeon,.super_slide2{
+      display: none!important;
+  }
+ }
+
+ @media  (min-height: 550px) {
+  #acordeon,.super_slide2{
+      display: none!important;
+  }
+ }
   /**/
-}
 
 .accordion_hechos_sub{
   width: 100%;
