@@ -107,7 +107,7 @@ margin-bottom: .5rem;
   }
  }
 
- @media  (min-height: 550px) {
+ @media  (min-height: 800px) {
   #acordeon,.super_slide2{
       display: none!important;
   }
