@@ -67,7 +67,7 @@ i.icon_modi_aco.fa-solid.fa-chart-column {
       display: flex!important;
   }
   #hero:before {
-    bottom: -7vh;
+    bottom: -12vh;
 }
 .li_btn_modo{
   left: 0px!important;
@@ -86,7 +86,9 @@ i.icon_modi_aco.fa-solid.fa-chart-column {
 }
 i.icon_modi_aco.fa-solid.fa-chart-column {
 margin-bottom: .5rem;
-
+}
+#texto_automatico{
+  padding: 0 60px!important;
 }
 }
 
