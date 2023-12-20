@@ -61,6 +61,11 @@ i.icon_modi_aco.fa-solid.fa-chart-column {
   }
 }
 
+@media (max-width: 991px) and (max-height: 500px){
+  .navbar ul {
+      display: flex!important;
+  }
+}
 
 /* Para pantallas grandes, el color de fondo es rojo */
 @media (min-width: 768px) {
