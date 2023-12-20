@@ -59,16 +59,26 @@ i.icon_modi_aco.fa-solid.fa-chart-column {
     #hero:before {
       bottom: -7vh;
   }
+ 
 }
 
 @media (max-width: 991px) and (max-height: 500px){
   .navbar ul {
       display: flex!important;
   }
+  #hero:before {
+    bottom: -7vh;
+}
+.li_btn_modo{
+  left: 0px!important;
+}
+.li_no_va{
+  display: none;
+}
 }
 
 /* Para pantallas grandes, el color de fondo es rojo */
-@media (min-width: 768px) {
+@media (min-height:1000px) and (min-width: 768px) {
   #acordeon,.super_slide2{
       display: none;
   }
