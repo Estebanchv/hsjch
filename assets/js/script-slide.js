@@ -191,7 +191,7 @@ $(".card8").click(function(){
 function ocultar() {
   document.getElementsByClassName("holi").style.opacity = "0";
 }
-
+/*
 $("#hero").hover(function(){
   $(".holi").css("opacity", 0);
   $(".holi1,.holi2,.holi3,.holi4,.holi5,.holi6,.holi2,.holi8").css("z-index", "0");
@@ -202,3 +202,4 @@ $("#carrouselflotante").hover(function(){
   $(".holi1,.holi2,.holi3,.holi4,.holi5,.holi6,.holi2,.holi8").css("z-index", "0");
 });
 
+*/

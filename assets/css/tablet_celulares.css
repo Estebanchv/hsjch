@@ -114,6 +114,11 @@ margin-bottom: .5rem;
  }
   /**/
 
+  @media (min-width: 992px){
+    #featured-services .mb-lg-0 {
+        margin-bottom: 3rem!important; 
+    }
+  }
 .accordion_hechos_sub{
   width: 100%;
 }
