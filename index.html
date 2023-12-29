@@ -39,7 +39,7 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 </head>
-
+<!--Deshabilitar ctrl + u, f12,click derecho-->
 <body>
 
   <!-- ======= Top Bar ======= -->
@@ -1129,6 +1129,19 @@
   $(this).addClass("active");
 });
 
+
+// Bloquear el clic derecho
+document.addEventListener("contextmenu", function(e) {
+  e.preventDefault();
+}, false);
+
+// Bloquear el Ctrl + U y el F12
+document.addEventListener("keydown", function(e) {
+  // 85 = U, 123 = F12
+  if (e.ctrlKey && e.keyCode == 85 || e.keyCode == 123) {
+    e.preventDefault();
+  }
+}, false);
   </script>
 
 </body>
