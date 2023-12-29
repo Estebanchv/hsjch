@@ -1137,8 +1137,9 @@ document.addEventListener("contextmenu", function(e) {
 
 // Bloquear el Ctrl + U y el F12
 document.addEventListener("keydown", function(e) {
-  // 85 = U, 123 = F12
-  if (e.ctrlKey && e.keyCode == 85 || e.keyCode == 123) {
+  // 85 = U, 123 = F12 
+  // 83 = S, 80 = P
+  if (e.ctrlKey && e.keyCode == 85 || e.keyCode == 123 || e.keyCode == 83 || e.keyCode == 80) {
     e.preventDefault();
   }
 }, false);
