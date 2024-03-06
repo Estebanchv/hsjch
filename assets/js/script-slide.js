@@ -54,11 +54,15 @@ $(".option.opts_l1").click(function(){
   $(".div3_slider").addClass("escondido");
   $(".div4_slider").addClass("escondido");
   $(".div5_slider").addClass("escondido");
+  $(".div6_slider").addClass("escondido");
+  $(".div7_slider").addClass("escondido");
 
   $(".div2_slider").addClass("adelgazar");
   $(".div3_slider").addClass("adelgazar");
   $(".div4_slider").addClass("adelgazar");
   $(".div5_slider").addClass("adelgazar");
+  $(".div6_slider").addClass("adelgazar");
+  $(".div7_slider").addClass("adelgazar");
   $(".div1_slider").removeClass("adelgazar");
 });
 
@@ -68,11 +72,15 @@ $(".option.opts_l2").click(function(){
   $(".div3_slider").addClass("escondido");
   $(".div4_slider").addClass("escondido");
   $(".div5_slider").addClass("escondido");
+  $(".div6_slider").addClass("escondido");
+  $(".div7_slider").addClass("escondido");
 
   $(".div1_slider").addClass("adelgazar");
   $(".div3_slider").addClass("adelgazar");
   $(".div4_slider").addClass("adelgazar");
   $(".div5_slider").addClass("adelgazar");
+  $(".div6_slider").addClass("adelgazar");
+  $(".div7_slider").addClass("adelgazar");
   $(".div2_slider").removeClass("adelgazar");
 });
 
@@ -82,11 +90,15 @@ $(".option.opts_l3").click(function(){
   $(".div2_slider").addClass("escondido");
   $(".div4_slider").addClass("escondido");
   $(".div5_slider").addClass("escondido");
+  $(".div6_slider").addClass("escondido");
+  $(".div7_slider").addClass("escondido");
 
   $(".div1_slider").addClass("adelgazar");
   $(".div2_slider").addClass("adelgazar");
   $(".div4_slider").addClass("adelgazar");
   $(".div5_slider").addClass("adelgazar");
+  $(".div6_slider").addClass("adelgazar");
+  $(".div7_slider").addClass("adelgazar");
   $(".div3_slider").removeClass("adelgazar");
 });
 $(".option.opts_l4").click(function(){
@@ -95,11 +107,15 @@ $(".option.opts_l4").click(function(){
   $(".div3_slider").addClass("escondido");
   $(".div2_slider").addClass("escondido");
   $(".div5_slider").addClass("escondido");
+  $(".div6_slider").addClass("escondido");
+  $(".div7_slider").addClass("escondido");
 
   $(".div1_slider").addClass("adelgazar");
   $(".div3_slider").addClass("adelgazar");
   $(".div2_slider").addClass("adelgazar");
   $(".div5_slider").addClass("adelgazar");
+  $(".div6_slider").addClass("adelgazar");
+  $(".div7_slider").addClass("adelgazar");
   $(".div4_slider").removeClass("adelgazar");
 });
 $(".option.opts_l5").click(function(){
@@ -108,12 +124,52 @@ $(".option.opts_l5").click(function(){
   $(".div3_slider").addClass("escondido");
   $(".div4_slider").addClass("escondido");
   $(".div2_slider").addClass("escondido");
+  $(".div6_slider").addClass("escondido");
+  $(".div7_slider").addClass("escondido");
 
   $(".div1_slider").addClass("adelgazar");
   $(".div3_slider").addClass("adelgazar");
   $(".div4_slider").addClass("adelgazar");
   $(".div2_slider").addClass("adelgazar");
+  $(".div6_slider").addClass("adelgazar");
+  $(".div7_slider").addClass("adelgazar");
   $(".div5_slider").removeClass("adelgazar");
+});
+
+$(".option.opts_l6").click(function(){
+  $(".div6_slider").removeClass("escondido");
+  $(".div1_slider").addClass("escondido");
+  $(".div3_slider").addClass("escondido");
+  $(".div4_slider").addClass("escondido");
+  $(".div2_slider").addClass("escondido");
+  $(".div5_slider").addClass("escondido");
+  $(".div7_slider").addClass("escondido");
+
+  $(".div1_slider").addClass("adelgazar");
+  $(".div3_slider").addClass("adelgazar");
+  $(".div4_slider").addClass("adelgazar");
+  $(".div2_slider").addClass("adelgazar");
+  $(".div5_slider").addClass("adelgazar");
+  $(".div7_slider").addClass("adelgazar");
+  $(".div6_slider").removeClass("adelgazar");
+});
+
+$(".option.opts_l7").click(function(){
+  $(".div7_slider").removeClass("escondido");
+  $(".div1_slider").addClass("escondido");
+  $(".div3_slider").addClass("escondido");
+  $(".div4_slider").addClass("escondido");
+  $(".div2_slider").addClass("escondido");
+  $(".div6_slider").addClass("escondido");
+  $(".div5_slider").addClass("escondido");
+
+  $(".div1_slider").addClass("adelgazar");
+  $(".div3_slider").addClass("adelgazar");
+  $(".div4_slider").addClass("adelgazar");
+  $(".div2_slider").addClass("adelgazar");
+  $(".div6_slider").addClass("adelgazar");
+  $(".div5_slider").addClass("adelgazar");
+  $(".div7_slider").removeClass("adelgazar");
 });
 /*
 $(".card1").click(function() {
@@ -219,11 +275,11 @@ function ocultar() {
 
 $("#hero").hover(function(){
   $(".holi").css("opacity", 0);
-  $(".holi1,.holi2,.holi3,.holi4,.holi5,.holi6,.holi2,.holi8").css("z-index", "0");
-});0
+  $(".holi1,.holi2,.holi3,.holi4,.holi5,.holi6,.holi2,.holi8,.holi9").css("z-index", "0");
+});
 
 $("#carrouselflotante").hover(function(){
   $(".holi").css("opacity", 0);
-  $(".holi1,.holi2,.holi3,.holi4,.holi5,.holi6,.holi2,.holi8").css("z-index", "0");
+  $(".holi1,.holi2,.holi3,.holi4,.holi5,.holi6,.holi2,.holi8,.holi9").css("z-index", "0");
 });
 
