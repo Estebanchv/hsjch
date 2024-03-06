@@ -83,11 +83,11 @@ body #user-button .u-icons a div {
   padding: 0.5rem;
   transition: 0s;
 }
-body #user-button .u-icons a[href="https://twitter.com/Osorpenke"]
+body #user-button .u-icons a[href="#"]
 {
   position: relative;
 }
-body #user-button .u-icons a[href="https://twitter.com/Osorpenke"]:before
+body #user-button .u-icons a[href="#"]:before
 {
   content: "Middle Click";
   position: absolute;

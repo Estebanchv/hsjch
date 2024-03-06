@@ -196,8 +196,8 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 16px 24px;
-    gap: 8px;
+    padding: 14px 24px;
+    gap: 0px;
     background: #FFFFFF;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1), 0px 16px 32px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
@@ -247,6 +247,9 @@
 }
 #carrouselflotante li:nth-child(8), li:nth-child(8) .card {
     animation-delay: calc((var(--rotate-speed)/var(--count)) * -7s);
+}
+#carrouselflotante li:nth-child(9), li:nth-child(9) .card {
+    animation-delay: calc((var(--rotate-speed)/var(--count)) * -8s);
 }
 
 
@@ -348,63 +351,111 @@
 
 .holi1{
   background-color: lawngreen;
+  display: none;
 }
 .holi2{
   background-color: rgb(198, 246, 3);
+  display:none;
 }
 .holi3{
   background-color: rgb(237, 171, 3);
+  display: none;
 }
 .holi4{
   background-color: rgb(252, 113, 0);
+  display: none;
 }
 .holi5{
   background-color: rgb(237, 59, 5);
+  display: none;
 }
 .holi6{
   background-color: rgb(0, 246, 107);
+  display: none;
 }
 .holi7{
   background-color: rgb(40, 104, 75);
+  display: none;
 }
 .holi8{
   background-color: #0560d7;
+  display: none;
+}
+.holi9{
+  background-color: #99b365;
+  display: none;
 }
 
     </style>
 
     <!-- ======= Featured Services Section ======= -->
-
+    <!--ver la manera que se pueda ingresar links en cada seccion y que estos no choquen con otros programas
+      Manual,Criterio de programacion, Sintaxis
+     -->
     <section id="carrouselflotante">
       <div class="section-title">
         <h2>Resumen Ejecutivo</h2>
-        <p>Principales Indicadores de Salud</p>
+        <p>Programas Presupuestales MINSA</p>
       </div>
       <div class="void" id="void">
       
       <div id="slide_circular">
-        <div class="indicador-solitario holi holi1" id="holi1" ><h1 class="">Aca ira indicadores 1</h1>
+        <div class="indicador-solitario holi holi1" id="holi1" ><h1 class="">MATERNO NEONATAL</h1>
           <a href="https://www.google.com/" target="_blank"><span class="model-name">Indicador prueba</span></a>
-       
+          <span class="model-name"> <a href="https://drive.google.com/drive/folders/1wYsI-s7RuJBTjBHvCCXjjswNgzqP0gFq?usp=sharing" target="_blank">Documentos tecnicos</a></span>
+
         </div>
-          <div class="indicador-solitario holi holi2"><h1 class="">Aca ira indicadores 2</h1><a href="https://www.youtube.com/" target="_blank"><span class="model-name">Indicador</span></a></div>
-          <div class="indicador-solitario holi holi3"><h1 class="">Aca ira indicadores 3</h1></div>
-          <div class="indicador-solitario holi holi4" ><h1 class="">Aca ira indicadores 4</h1></div>
-          <div class="indicador-solitario holi holi5" ><h1 class="">Aca ira indicadores 5</h1></div>
-          <div class="indicador-solitario holi holi6" ><h1 class="">Aca ira indicadores 6</h1></div>
-          <div class="indicador-solitario holi holi7" ><h1 class="">Aca ira indicadores 7</h1></div>
-          <div class="indicador-solitario holi holi8" ><h1 class="">Aca ira indicadores 8</h1> <a href="https://www.google.com/" target="_blank"></a></div>
-        <div class="crop" id="carrouselflotante-card">
+          <div class="indicador-solitario holi holi2"><h1 class="">TBC/VIH/SIDA</h1><a href="https://www.youtube.com/" target="_blank">
+            <span class="model-name">yamete kudasai Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum facilis aliquam quia harum facere tenetur quidem, est, consequatur repellat soluta in eum quis quas quibusdam autem dicta quos a officiis?</span></a>
+            <span class="model-name">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores velit voluptate, harum laboriosam cupiditate ad, blanditiis aperiam eligendi officiis id veritatis atque tempora excepturi labore officia necessitatibus fuga quas deleniti.</span>
+            <span class="model-name"> <a href="https://drive.google.com/drive/folders/1jJZRxAG2gWD35QNurylYoHZjU2BVFfnT?usp=sharing" target="_blank">Documentos tecnicos</a></span>
+
+          </div>
+          <div class="indicador-solitario holi holi3"><h1 class="">METAXENICA Y ZOONOSIS</h1>
+            <span class="model-name"> <a href="https://drive.google.com/drive/folders/1i_v7PnKQpV6sFiMrls5OQ_sZMUj2AxA3?usp=sharing" target="_blank">Documentos tecnicos</a></span>
+
+          </div>
+          <div class="indicador-solitario holi holi4" ><h1 class="">NO TRANSMISIBLES</h1>
+            <span class="model-name"> <a href="https://drive.google.com/drive/folders/172G1fezYC-q9CYjnieHmcRtwm4EW8Cbw?usp=sharing" target="_blank">Documentos tecnicos</a></span>
+
+          </div>
+          <div class="indicador-solitario holi holi5" ><h1 class="">CANCER</h1>
+            <span class="model-name"> <a href="https://drive.google.com/drive/folders/1NOJP2bNB6o8NJ0z96kCH2ddH2SvxlzpL?usp=sharing" target="_blank">Documentos tecnicos</a></span>
+
+          </div>
           
-        <ul id="card-list" style="--count: 8;">
-            <li><div class="card indicador card1"><span class="model-name"><strong> Indicador</strong></span><span>Indicadores de Desempeño y Compromiso de Mejora</span></div></li>
-            <li><div class="card indicador card2"><span class="model-name"><strong>Indicador</strong></span><span>Indicadores de Compromiso y Gestion FED</span></div></li>
-            <li><div class="card indicador card3"><span class="model-name"><strong>Indicador</strong></span><span>Sanitario Priorizado</span></div></li>
-            <li><div class="card indicador card4"><span class="model-name"><strong>Indicador</strong></span><span>Recuros Humanos segun PLH</span></div></li>
-            <li><div class="card indicador card5"><span class="model-name"><strong>Indicador</strong></span><span>Indicadores de Ejecucion Presupuestal</span></div></li>
-            <li><div class="card indicador card6"><span class="model-name"><strong>Indicador</strong></span><span>Gestantes</span></div></li>
-            <li><div class="card indicador card7"><span class="model-name"><strong>Indicador</strong></span><span>Indicadores de Ejecucion Presupuestal</span></div></li>
-            <li><div class="card indicador card8"><span class="model-name"><strong>Indicador</strong></span><span>Gestantes</span></div></li>
+          <div class="indicador-solitario holi holi6" ><h1 class="">EMERGENCIA  POR DESASTRES / URGENCIAS MEDICAS</h1>
+            <span class="model-name"> <a href="https://drive.google.com/drive/folders/1ylziDDGVdze4Och3TqtZ8v_NUcE6vdIu?usp=sharing" target="_blank">Documentos tecnicos</a></span>
+
+          </div>
+          <div class="indicador-solitario holi holi7" ><h1 class="">DISCAPACIDAD</h1>
+            <span class="model-name"> <a href="https://drive.google.com/drive/folders/1B_2PvLxumc850M4hgDCH_0M_63W6Qxpz?usp=sharing" target="_blank">Documentos tecnicos</a></span>
+
+          </div>
+          <div class="indicador-solitario holi holi8" ><h1 class="">SALUD MENTAL</h1>
+            
+            <span class="model-name"> <a href="https://drive.google.com/drive/folders/1PlTele8XGi8LSO8SGYzKnj-HF0Q8SUyj?usp=sharing" target="_blank">Documentos tecnicos</a></span>
+
+            
+          </div>
+          <div class="indicador-solitario holi holi9" ><h1 class="">DESARROLLO INFANTIL TEMPRANO</h1>
+            <span class="model-name"> <a href="https://drive.google.com/drive/folders/1H6w9mGMyf68tx4Xn5j5ocSCUZymFQWb1?usp=sharing" target="_blank">Documentos tecnicos</a></span>
+
+          
+          </div>
+         
+          <div class="crop" id="carrouselflotante-card">
+          
+        <ul id="card-list" style="--count: 9;">
+            <li><div class="card indicador card1"><span class="model-name"><strong>PP0002</strong></span><span>Materno Neonatal</span></div></li>
+            <li><div class="card indicador card2"><span class="model-name"><strong>PP0016</strong></span><span>TBC/VIH/SIDA</span></div></li>
+            <li><div class="card indicador card3"><span class="model-name"><strong>PP0017</strong></span><span>Metaxenica y Zoonosis</span></div></li>
+            <li><div class="card indicador card4"><span class="model-name"><strong>PP0018</strong></span><span>Enfermedades No Transmisibles</span></div></li>
+            <li><div class="card indicador card5"><span class="model-name"><strong>PP0024</strong></span><span>Cancer</span></div></li>
+            <li><div class="card indicador card6"><span class="model-name"><strong>PP0068/PP0104</strong></span><span>Emergencias Desastres / Urgencias Medicas</span></div></li>
+            <li><div class="card indicador card7"><span class="model-name"><strong>PP0129</strong></span><span>Discapacidad</span></div></li>
+            <li><div class="card indicador card8"><span class="model-name"><strong>PP0131</strong></span><span>Salud Mental</span></div></li>
+            <li><div class="card indicador card9"><span class="model-name"><strong>PP1001</strong></span><span>Desarrollo Infantil Temprano</span></div></li>
             <!-- añadir un maximo de 15 cards -->
         </ul>
         <div class="last-circle"></div>
@@ -421,81 +472,91 @@
         <div class="accordion-item accordion_cel_primera">
           <h2 class="accordion-header" id="flush-headingOne">
             <button class="accordion-button accordion_cel_primera_boton collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-              <i class="icon_modi_aco fa-solid fa-chart-column"></i> <h4>Indicadores 1</h4>
+              <i class="icon_modi_aco fa-solid fa-chart-column"></i> <h4>MATERNO NEONATAL</h4>
             </button>
           </h2>
           <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample" style="">
-            <div class="accordion-body">1 punto sub indicador</div>
+            <div class="accordion-body"><a href="https://drive.google.com/drive/folders/1wYsI-s7RuJBTjBHvCCXjjswNgzqP0gFq?usp=sharing" target="_blank">Documentos tecnicos</a></div>
           </div>
         </div>
         <div class="accordion-item accordion_cel_primera">
           <h2 class="accordion-header" id="flush-headingTwo">
             <button class="accordion-button accordion_cel_primera_boton collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-              <i class="icon_modi_aco fa-solid fa-chart-column"></i> <h4>indicadores 2  </h4>
+              <i class="icon_modi_aco fa-solid fa-chart-column"></i> <h4>TBC/VIH/SIDA </h4>
             </button>
           </h2>
           <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample" style="">
-            <div class="accordion-body">1 punto sub indicador </div>
+            <div class="accordion-body"><a href="https://drive.google.com/drive/folders/1jJZRxAG2gWD35QNurylYoHZjU2BVFfnT?usp=sharing" target="_blank">Documentos tecnicos</a> </div>
           </div>
         </div>
         <div class="accordion-item accordion_cel_primera">
           <h2 class="accordion-header" id="flush-headingThree">
             <button class="accordion-button accordion_cel_primera_boton collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-              <i class="icon_modi_aco fa-solid fa-chart-column"></i>  <h4>indicadores 3</h4>
+              <i class="icon_modi_aco fa-solid fa-chart-column"></i>  <h4>METAXENICA Y ZOONOSIS</h4>
             </button>
           </h2>
           <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample" style="">
-            <div class="accordion-body">1 punto sub indicador</div>
+            <div class="accordion-body"><a href="https://drive.google.com/drive/folders/1i_v7PnKQpV6sFiMrls5OQ_sZMUj2AxA3?usp=sharing" target="_blank">Documentos tecnicos</a></div>
           </div>
         </div>
         <div class="accordion-item accordion_cel_primera">
           <h2 class="accordion-header" id="flush-headingFour">
             <button class="accordion-button accordion_cel_primera_boton collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapseFour">
-              <i class="icon_modi_aco fa-solid fa-chart-column"></i> <h4>indicadores 4</h4> 
+              <i class="icon_modi_aco fa-solid fa-chart-column"></i> <h4>NO TRANSMISIBLES</h4> 
             </button>
           </h2>
           <div id="flush-collapsefour" class="accordion-collapse collapse" aria-labelledby="flush-headingfour" data-bs-parent="#accordionFlushExample" style="">
-            <div class="accordion-body">1 punto sub indicador</div>
+            <div class="accordion-body"><a href="https://drive.google.com/drive/folders/172G1fezYC-q9CYjnieHmcRtwm4EW8Cbw?usp=sharing" target="_blank">Documentos tecnicos</a></div>
           </div>
         </div>
         <div class="accordion-item accordion_cel_primera">
           <h2 class="accordion-header" id="flush-headingfive">
             <button class="accordion-button accordion_cel_primera_boton collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefive" aria-expanded="false" aria-controls="flush-collapsefive">
-              <i class="icon_modi_aco fa-solid fa-chart-column"></i> <h4>indicadores 5</h4>
+              <i class="icon_modi_aco fa-solid fa-chart-column"></i> <h4>CANCER</h4>
             </button>
           </h2>
           <div id="flush-collapsefive" class="accordion-collapse collapse" aria-labelledby="flush-headingfive" data-bs-parent="#accordionFlushExample" style="">
-            <div class="accordion-body">1 punto sub indicador</div>
+            <div class="accordion-body"><a href="https://drive.google.com/drive/folders/1NOJP2bNB6o8NJ0z96kCH2ddH2SvxlzpL?usp=sharing" target="_blank">Documentos tecnicos</a></div>
           </div>
         </div>
         <div class="accordion-item accordion_cel_primera">
           <h2 class="accordion-header" id="flush-headingSix">
             <button class="accordion-button accordion_cel_primera_boton collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
-              <i class="icon_modi_aco fa-solid fa-chart-column"></i> <h4>indicadores 6</h4>
+              <i class="icon_modi_aco fa-solid fa-chart-column"></i> <h4>EMERGENCIA  POR DESASTRES / URGENCIAS MEDICAS</h4>
             </button>
           </h2>
           <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">1 punto sub indicador</div>
+            <div class="accordion-body"><a href="https://drive.google.com/drive/folders/1ylziDDGVdze4Och3TqtZ8v_NUcE6vdIu?usp=sharing" target="_blank">Documentos tecnicos</a></div>
           </div>
         </div>
         <div class="accordion-item accordion_cel_primera">
           <h2 class="accordion-header" id="flush-headingSeven">
             <button class="accordion-button accordion_cel_primera_boton collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
-              <i class="icon_modi_aco fa-solid fa-chart-column"></i> <h4>indicadores 7</h4>
+              <i class="icon_modi_aco fa-solid fa-chart-column"></i> <h4>DISCAPACIDAD</h4>
             </button>
           </h2>
           <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">1 punto sub indicador</div>
+            <div class="accordion-body"><a href="https://drive.google.com/drive/folders/1B_2PvLxumc850M4hgDCH_0M_63W6Qxpz?usp=sharing" target="_blank">Documentos tecnicos</a></div>
           </div>
         </div>
         <div class="accordion-item accordion_cel_primera">
           <h2 class="accordion-header" id="flush-headingEight">
             <button class="accordion-button accordion_cel_primera_boton collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
-              <i class="icon_modi_aco fa-solid fa-chart-column"></i>  <h4>indicadores 8</h4>
+              <i class="icon_modi_aco fa-solid fa-chart-column"></i>  <h4>SALUD MENTAL</h4>
             </button>
           </h2>
           <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
-            <a href=""><div class="accordion-body">1 punto sub indicador</div></a>
+            <a href=""><div class="accordion-body"><a href="https://drive.google.com/drive/folders/1PlTele8XGi8LSO8SGYzKnj-HF0Q8SUyj?usp=sharing" target="_blank">Documentos tecnicos</a></div></a>
+          </div>
+        </div>
+        <div class="accordion-item accordion_cel_primera">
+          <h2 class="accordion-header" id="flush-headingnine">
+            <button class="accordion-button accordion_cel_primera_boton collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsenine" aria-expanded="false" aria-controls="flush-collapsenine">
+              <i class="icon_modi_aco fa-solid fa-chart-column"></i>  <h4>DESARROLLO INFANTIL TEMPRANO</h4>
+            </button>
+          </h2>
+          <div id="flush-collapsenine" class="accordion-collapse collapse" aria-labelledby="flush-headingnine" data-bs-parent="#accordionFlushExample">
+            <a href=""><div class="accordion-body"><a href="https://drive.google.com/drive/folders/1H6w9mGMyf68tx4Xn5j5ocSCUZymFQWb1?usp=sharing" target="_blank">Documentos tecnicos</a></div></a>
           </div>
         </div>
        <!-- version movil-->
@@ -652,8 +713,8 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Vacunación</h2>
-          <p>Vacunación Contra el Covid-19 y Esquema Regular</p>
+          <h2>Indicadores Hospitalarios</h2>
+          <p>que mira perro</p>
         </div>
 
         <div class="row">
@@ -700,7 +761,33 @@
         <p>Migracion de SIHCE. MODULOS de WAWARED,CRED e INMUNIZACIONES</p>
       </div>
       <div class="options super_slide" data-aos="fade-up" data-aos-delay="100" style="height: 35vh;">
-         <div class="option opts_l1 active" style="background-image:url(assets/img/slide-principales/enfermera.jpg);">
+        <div class="option opts_l1 active" style="background-image:url(assets/img/slide-principales/gestante.png);">
+          <div class="shadow"></div>
+          <div class="label">
+             <div class="icon">
+                🤰
+             </div>
+             <div class="info">
+              <div class="main texto-slider">    GESTANTE</div>
+             </div>
+          </div>
+       </div>
+       
+        <div class="option opts_l2" style="background-image:url(assets/img/slide-principales/rn.jpg);">
+          <div class="shadow"></div>
+          <div class="label">
+             <div class="icon">
+                👶
+             </div>
+             <div class="info">
+              <div class="main texto-slider">    CNV</div>
+            <!--    <div class="main texto-slider">1.Ingreso al sistema CNV en linea</div>
+                <div class="main texto-slider">2.Tablero CNV en linea REGIONAL 2022</div>
+                <div class="main texto-slider">3.Tablero CNV en linea REGIONAL 2018-2021</div>-->
+             </div>
+          </div>
+       </div>
+         <div class="option opts_l3" style="background-image:url(assets/img/slide-principales/enfermera.jpg);">
 
             <div class="shadow"></div>
             <div class="label">
@@ -714,80 +801,59 @@
             </div>
          </div>
        
-         <div class="option opts_l2" style="background-image:url(assets/img/slide-principales/cred.jpg);">
+         <div class="option opts_l4" style="background-image:url(assets/img/slide-principales/cred.jpg);">
             <div class="shadow"></div>
             <div class="label">
                <div class="icon">
                   🧑‍🍼
                </div>
                <div class="info">
-                <div class="main texto-slider">    CRED</div>
+                <div class="main texto-slider">    Etapa Vida Niño</div>
                 <!--  <div class="main texto-slider">1.Tablero de migraciones Sihce a Hisminsa</div>
                   <div class="main texto-slider">2.Acceso Al istema.</div>-->
                </div>
             </div>
          </div>
-         <div class="option opts_l3" style="background-image:url(assets/img/slide-principales/ATAUD.png);">
-            <div class="shadow"></div>
-            <div class="label">
-               <div class="icon">
-                ⚰️
-               </div>
-               <div class="info">
-                <div class="main texto-slider">    SINADEF</div>
-               <!--   <div class="main texto-slider">1.Ingreso Al sistema SINADEF</div>
-                  <div class="main texto-slider">2.Tablero de defunciones Regional!</div>
-                  <div class="main texto-slider">3.Tablero de defunciones Reunis!</div>-->
-               </div>
-            </div>
-         </div>
-         <div class="option opts_l4" style="background-image:url(assets/img/slide-principales/rn.jpg);">
-            <div class="shadow"></div>
-            <div class="label">
-               <div class="icon">
-                  👶
-               </div>
-               <div class="info">
-                <div class="main texto-slider">    CNV</div>
-              <!--    <div class="main texto-slider">1.Ingreso al sistema CNV en linea</div>
-                  <div class="main texto-slider">2.Tablero CNV en linea REGIONAL 2022</div>
-                  <div class="main texto-slider">3.Tablero CNV en linea REGIONAL 2018-2021</div>-->
-               </div>
-            </div>
-         </div>
-         <div class="option opts_l5" style="background-image:url(assets/img/slide-principales/gestante.png);">
-            <div class="shadow"></div>
-            <div class="label">
-               <div class="icon">
-                  🤰
-               </div>
-               <div class="info">
-                <div class="main texto-slider">    GESTANTE</div>
-               </div>
-            </div>
-         </div>
-         <div class="option opts_l6" style="">
+         <div class="option opts_l5" style="">
           <div class="shadow"></div>
           <div class="label">
              <div class="icon">
-                🤰
+                
+              
              </div>
              <div class="info">
-          
+              <div class="main texto-slider">    Adolescente</div>
              </div>
           </div>
        </div>
-       <div class="option opts_l7" style="">
+        
+        
+       <div class="option opts_l6" style="">
         <div class="shadow"></div>
         <div class="label">
            <div class="icon">
               🤰
            </div>
            <div class="info">
-        
+            <div class="main texto-slider">    Adulto Mayor</div>
            </div>
         </div>
      </div>
+     <div class="option opts_l7" style="background-image:url(assets/img/slide-principales/ATAUD.png);">
+      <div class="shadow"></div>
+      <div class="label">
+         <div class="icon">
+          ⚰️
+         </div>
+         <div class="info">
+          <div class="main texto-slider">    SINADEF</div>
+         <!--   <div class="main texto-slider">1.Ingreso Al sistema SINADEF</div>
+            <div class="main texto-slider">2.Tablero de defunciones Regional!</div>
+            <div class="main texto-slider">3.Tablero de defunciones Reunis!</div>-->
+         </div>
+      </div>
+   </div>
+  
       </div>
 <style>
   .prueba{
@@ -813,42 +879,17 @@
         
         
         <div class="row no-gutters">
-
-          <div class="col-lg-4 col-md-6 icon-box div1_slider" data-aos="zoom-in" data-aos-delay="100" style="padding: 0 0 0 12%;">
-            <div class="prueba " style="PADDING-TOP: 16%;">
-            <div class="icon ic1"><i class="fa-solid fa-chart-column"></i></div>
-            <div class="slide_text1 escondido"><h4 class="title"><a href="">Tablero Migracion de SIHCE A MINSA</a></h4></div>
-          </div>
-          <div class="prueba" style="position: absolute; height: 100%;">
-            <div class="icon 1c2"><i class="fa-solid fa-chart-column"></i></div>
-            <div class="slide_text2 escondido"><h4 class="title" ><a href="">Control de Calidad</a></h4></div>
-          </div>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box div2_slider adelgazar escondido" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-lg-4 col-md-6 icon-box div1_slider adelgazar escondido " data-aos="zoom-in" data-aos-delay="100">
             <div class="prueba ">
-              <div class="icon ic1"><i class="fa-solid fa-chart-column"></i></div>
-              <div class="slide_text1 escondido"><h4 class="title"><a href="">Tablero Migracion de SIHCE A MINSA</a></h4></div>
-              </div>
+            <div class="icon ic1"><i class="fa-solid fa-chart-column"></i></div>
+            <div class="slide_text1 escondido"><h4 class="title"><a href="">Sala Situacional</a></h4></div>
+          </div>
           <div class="prueba " style="position: absolute; height: 100%;">
             <div class="icon 1c2"><i class="fa-solid fa-chart-column"></i></div>
             <div class="slide_text2 escondido"><h4 class="title" ><a href="">Control de Calidad</a></h4></div>
           </div>
           </div>
-          <div class="col-lg-4 col-md-6 icon-box div3_slider adelgazar escondido" data-aos="zoom-in" data-aos-delay="100">
-            <div class="prueba" style="PADDING-TOP: 10%;">
-            <div class="icon ic1"><i class="fa-solid fa-chart-column"></i></div>
-            <div class="slide_text1 escondido"><h4 class="title"><a href="">Ingreso Al Sistema SINADEF</a></h4></div>
-          </div>
-          <div class="prueba" style="position: absolute; height: 100%;LEFT: 60%;">
-            <div class="icon 1c2"><i class="fa-solid fa-chart-column"></i></div>
-            <div class="slide_text2 escondido"><h4 class="title" ><a href="">Tablero de defunciones Provincial</a></h4></div>
-          </div>
-          <div class="prueba" style="position: absolute; height: 100%; left: 122%;">
-            <div class="icon 1c3"><i class="fa-solid fa-chart-column"></i></div>
-            <div class="slide_text3 escondido"><h4 class="title" ><a href="">Tablero de defunciones REUNIS</a></h4></div>
-          </div>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box div4_slider adelgazar escondido " data-aos="zoom-in" data-aos-delay="100" style="padding: 0 0 0 12%;">
+          <div class="col-lg-4 col-md-6 icon-box div2_slider adelgazar escondido " data-aos="zoom-in" data-aos-delay="100" style="padding: 0 0 0 12%;">
             <div class="prueba" style="PADDING-TOP: 15%;">
               <div class="icon ic1"><i class="fa-solid fa-chart-column"></i></div>
               <div class="slide_text1 escondido"><h4 class="title"><a href="">Ingreso Al Sistema CNV en Linea</a></h4></div>
@@ -863,16 +904,64 @@
             </div>
        
           </div>
-          <div class="col-lg-4 col-md-6 icon-box div5_slider adelgazar escondido " data-aos="zoom-in" data-aos-delay="100">
-            <div class="prueba ">
+          <div class="col-lg-4 col-md-6 icon-box div3_slider" data-aos="zoom-in" data-aos-delay="100" style="padding: 0 0 0 12%;">
+            <div class="prueba " style="PADDING-TOP: 16%;">
             <div class="icon ic1"><i class="fa-solid fa-chart-column"></i></div>
-            <div class="slide_text1 escondido"><h4 class="title"><a href="">Tablero Migracion de SIHCE A MINSA</a></h4></div>
+            <div class="slide_text1 escondido"><h4 class="title"><a href="">Sala Situacional</a></h4></div>
           </div>
+          <div class="prueba" style="position: absolute; height: 100%;">
+            <div class="icon 1c2"><i class="fa-solid fa-chart-column"></i></div>
+            <div class="slide_text2 escondido"><h4 class="title" ><a href="">Control de Calidad</a></h4></div>
+          </div>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box div4_slider adelgazar escondido" data-aos="zoom-in" data-aos-delay="100">
+            <div class="prueba ">
+              <div class="icon ic1"><i class="fa-solid fa-chart-column"></i></div>
+              <div class="slide_text1 escondido"><h4 class="title"><a href="">Sala Situacional</a></h4></div>
+              </div>
           <div class="prueba " style="position: absolute; height: 100%;">
             <div class="icon 1c2"><i class="fa-solid fa-chart-column"></i></div>
             <div class="slide_text2 escondido"><h4 class="title" ><a href="">Control de Calidad</a></h4></div>
           </div>
           </div>
+          <!--adolescente  mover opciones desplegable-->
+          <div class="col-lg-4 col-md-6 icon-box div5_slider adelgazar escondido" data-aos="zoom-in" data-aos-delay="100">
+            <div class="prueba ">
+              <div class="icon ic1"><i class="fa-solid fa-chart-column"></i></div>
+              <div class="slide_text1 escondido"><h4 class="title"><a href="">Sala Situacional</a></h4></div>
+              </div>
+          <div class="prueba " style="position: absolute; height: 100%;">
+            <div class="icon 1c2"><i class="fa-solid fa-chart-column"></i></div>
+            <div class="slide_text2 escondido"><h4 class="title" ><a href="">Control de Calidad</a></h4></div>
+          </div>
+          </div>
+           <!--Adulto mayor -->
+          <div class="col-lg-4 col-md-6 icon-box div6_slider adelgazar escondido" data-aos="zoom-in" data-aos-delay="100">
+            <div class="prueba ">
+              <div class="icon ic1"><i class="fa-solid fa-chart-column"></i></div>
+              <div class="slide_text1 escondido"><h4 class="title"><a href="">Sala Situacional</a></h4></div>
+              </div>
+          <div class="prueba " style="position: absolute; height: 100%;">
+            <div class="icon 1c2"><i class="fa-solid fa-chart-column"></i></div>
+            <div class="slide_text2 escondido"><h4 class="title" ><a href="">Control de Calidad</a></h4></div>
+          </div>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box div7_slider adelgazar escondido" data-aos="zoom-in" data-aos-delay="100">
+            <div class="prueba" style="PADDING-TOP: 10%;">
+            <div class="icon ic1"><i class="fa-solid fa-chart-column"></i></div>
+            <div class="slide_text1 escondido"><h4 class="title"><a href="">Ingreso Al Sistema SINADEF</a></h4></div>
+          </div>
+          <div class="prueba" style="position: absolute; height: 100%;LEFT: 60%;">
+            <div class="icon 1c2"><i class="fa-solid fa-chart-column"></i></div>
+            <div class="slide_text2 escondido"><h4 class="title" ><a href="">Tablero de defunciones Provincial</a></h4></div>
+          </div>
+          <div class="prueba" style="position: absolute; height: 100%; left: 122%;">
+            <div class="icon 1c3"><i class="fa-solid fa-chart-column"></i></div>
+            <div class="slide_text3 escondido"><h4 class="title" ><a href="">Tablero de defunciones REUNIS</a></h4></div>
+          </div>
+          </div>
+          <!---->
+         
          
         </div>
 
@@ -884,46 +973,25 @@
         <div class="container services super_slide2 aos-init aos-animate" data-aos="fade-up">
 
           <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingNine">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+            <h2 class="accordion-header" id="flush-headingTen">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
                 <div class="section-title ">
                   <h2>Hechos Vitales y Historia CLinica Electronica SIHCE</h2>
-                  <p>Migracion de SIHCE. MODULOS de WAWARED,CRED e INMUNIZACIONES</p>
+                  <p></p>
                   <br>
                   <p><small>  Presione sobre este lugar para desplegar opciones</small></p>
                 </div>
               </button>
             </h2>
-            <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine" data-bs-parent="#accordionFlushExample" style="">
+            <div id="flush-collapseTen" class="accordion-collapse collapse" aria-labelledby="flush-headingNine" data-bs-parent="#accordionFlushExample" style="">
          <!--     <div class="accordion-body">1 punto sub indicador</div>-->
          
           <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingTen">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
-                <div class="col-lg-4 col-md-6 icon-box accordion_hechos_sub aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
-                  <div class="icon"><i class="fa-solid fa-chart-column"></i></div>
-                  <h4 class="title"><a href="">Inmunizaciones</a></h4>
-                  <p class="description"></p>
-                </div>
-              </button>
-            </h2>
-            <div id="flush-collapseTen" class="accordion-collapse collapse" aria-labelledby="flush-headingTen" data-bs-parent="#accordionFlushExample" style="">
-              <div class="col-lg-4 col-md-6 icon-box aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
-                <div class=" ">
-                <div class=" "><h4 class="title"><a href="">Tablero Migracion de SIHCE A MINSA</a></h4></div>
-              </div>
-              <div class="">
-                <div class=" "><h4 class="title"><a href="">Control de Calidad</a></h4></div>
-              </div>
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingEleven">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEleven" aria-expanded="false" aria-controls="flush-collapseEleven">
-                <div class="col-lg-4 col-md-6 icon-box accordion_hechos_sub aos-init aos-animate" data-aos="zoom-in" data-aos-delay="200">
+                <div class="col-lg-4 col-md-6 icon-box accordion_hechos_sub aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
                   <div class="icon"><i class="fa-solid fa-chart-column"></i></div>
-                  <h4 class="title"><a href="">CRED</a></h4>
+                  <h4 class="title"><a href="">GESTANTE</a></h4>
                   <p class="description"></p>
                 </div>
               </button>
@@ -931,7 +999,7 @@
             <div id="flush-collapseEleven" class="accordion-collapse collapse" aria-labelledby="flush-headingEleven" data-bs-parent="#accordionFlushExample" style="">
               <div class="col-lg-4 col-md-6 icon-box aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
                 <div class=" ">
-                <div class=" "><h4 class="title"><a href="">Tablero Migracion de SIHCE A MINSA</a></h4></div>
+                <div class=" "><h4 class="title"><a href="">Sala Situacional</a></h4></div>
               </div>
               <div class="">
                 <div class=" "><h4 class="title"><a href="">Control de Calidad</a></h4></div>
@@ -942,9 +1010,9 @@
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingtwelve">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsetwelve" aria-expanded="false" aria-controls="flush-collapsetwelve">
-                <div class="col-lg-4 col-md-6 icon-box accordion_hechos_sub aos-init aos-animate" data-aos="zoom-in" data-aos-delay="300">
+                <div class="col-lg-4 col-md-6 icon-box accordion_hechos_sub aos-init aos-animate" data-aos="zoom-in" data-aos-delay="200">
                   <div class="icon"><i class="fa-solid fa-chart-column"></i></div>
-                  <h4 class="title"><a href="">SINADEF</a></h4>
+                  <h4 class="title"><a href="">CNV</a></h4>
                   <p class="description"></p>
                 </div>
               </button>
@@ -966,14 +1034,36 @@
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingthirteen">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsethirteen" aria-expanded="false" aria-controls="flush-collapsethirteen">
-                <div class="col-lg-4 col-md-6 icon-box accordion_hechos_sub aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
+                <div class="col-lg-4 col-md-6 icon-box accordion_hechos_sub aos-init aos-animate" data-aos="zoom-in" data-aos-delay="300">
                   <div class="icon"><i class="fa-solid fa-chart-column"></i></div>
-                  <h4 class="title"><a href="">CNV</a></h4>
+                  <h4 class="title"><a href="">INMUNIZACIONES</a></h4>
                   <p class="description"></p>
                 </div>
               </button>
             </h2>
             <div id="flush-collapsethirteen" class="accordion-collapse collapse" aria-labelledby="flush-headingthirteen" data-bs-parent="#accordionFlushExample" style="">
+              <div class="col-lg-4 col-md-6 icon-box aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
+                <div class=" ">
+                <div class=" "><h4 class="title"><a href="">Sala Situacional</a></h4></div>
+              </div>
+              <div class="">
+                <div class=" "><h4 class="title"><a href="">Control de Calidad</a></h4></div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <!--Actualizar orden y funcion-->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFourteen">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFourteen" aria-expanded="false" aria-controls="flush-collapseFourteen">
+                <div class="col-lg-4 col-md-6 icon-box accordion_hechos_sub aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
+                  <div class="icon"><i class="fa-solid fa-chart-column"></i></div>
+                  <h4 class="title"><a href=""> Etapa Vida Niño</a></h4>
+                  <p class="description"></p>
+                </div>
+              </button>
+            </h2>
+            <div id="flush-collapseFourteen" class="accordion-collapse collapse" aria-labelledby="flush-headingFourteen" data-bs-parent="#accordionFlushExample" style="">
               <div class="col-lg-4 col-md-6 icon-box aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
                 <div class=" ">
                 <div class=" "><h4 class="title"><a href="">Ingreso Al Sistema CNV en Linea</a></h4></div>
@@ -988,8 +1078,8 @@
             </div>
           </div>
           <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingFourteen">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFourteen" aria-expanded="false" aria-controls="flush-collapseFourteen">
+            <h2 class="accordion-header" id="flush-headingFifteen">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFifteen" aria-expanded="false" aria-controls="flush-collapseFifteen">
                 <div class="col-lg-4 col-md-6 icon-box accordion_hechos_sub aos-init aos-animate" data-aos="zoom-in" data-aos-delay="200">
                   <div class="icon"><i class="fa-solid fa-chart-column"></i></div>
                   <h4 class="title"><a href="">GESTANTES</a></h4>
@@ -997,10 +1087,10 @@
                 </div>
               </button>
             </h2>
-            <div id="flush-collapseFourteen" class="accordion-collapse collapse" aria-labelledby="flush-headingFourteen" data-bs-parent="#accordionFlushExample" style="">
+            <div id="flush-collapseFifteen" class="accordion-collapse collapse" aria-labelledby="flush-headingFifteen" data-bs-parent="#accordionFlushExample" style="">
               <div class="col-lg-4 col-md-6 icon-box aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
                 <div class=" ">
-                <div class=" "><h4 class="title"><a href="">Tablero Migracion de SIHCE A MINSA</a></h4></div>
+                <div class=" "><h4 class="title"><a href="">Sala Situacional</a></h4></div>
               </div>
               <div class="">
                 <div class=" "><h4 class="title"><a href="">Control de Calidad</a></h4></div>
